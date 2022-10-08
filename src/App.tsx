@@ -1,6 +1,7 @@
 import './App.css';
 import BasicType from './components/BasicType';
 import AdvanceType from "./components/Advance/AdvanceType"
+import EventPropType from "./components/EventPropType/EventPropType"
 function App() {
   const personObject = {
     first: "Adi",
@@ -31,6 +32,7 @@ function App() {
           <p>Children component</p>
           <p>Helloo...</p>
       </AdvanceType>
+      <EventPropType />
     </div>
   );
 }
