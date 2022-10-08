@@ -1,4 +1,4 @@
-type greetProps = {
+type basicTypeProps = {
    name: string,
    age: number,
    isLoggesIn: boolean,
@@ -12,15 +12,16 @@ type greetProps = {
       last: string
    }[]
 }
-const Greet = (props: greetProps) => {
+const BasicType = (props: basicTypeProps) => {
    return (
       <div>
+         <h1>Basic Type</h1>
          {props.isLoggesIn ? (
             <>
-               <h1>Hello {props.name}</h1>
-               <h2>Welcome {props.fullName.first} {props.fullName.last}</h2>
-               <h2>Age {props.age}</h2>
-               <h3>My Hobbies are:- {props.hobbies} </h3>
+               <h4>* String = Hello {props.name}</h4>
+               <h4>* Object = Welcome {props.fullName.first} {props.fullName.last}</h4>
+               <h4>* Number = Age {props.age}</h4>
+               <h4>* Array = My Hobbies are:- {props.hobbies} </h4>
                <ul>
                   {props.personList.map((person,index) => (
                      <>
@@ -31,8 +32,8 @@ const Greet = (props: greetProps) => {
                </ul>
             </>   
          ) : 
-         <h1>Welcome Guest!!!</h1>}
+         <h6>Welcome Guest!!!</h6>}
       </div>
    )
 }
-export default Greet;
+export default BasicType;

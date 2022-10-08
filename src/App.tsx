@@ -1,5 +1,6 @@
 import './App.css';
-import Greet from './components/Greet';
+import BasicType from './components/BasicType';
+import AdvanceType from "./components/Advance/AdvanceType"
 function App() {
   const personObject = {
     first: "Adi",
@@ -18,7 +19,7 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet 
+      <BasicType 
         name="Aditi" 
         age={20} 
         isLoggesIn
@@ -26,6 +27,10 @@ function App() {
         hobbies={hobbiesArray}
         personList={personListArray}
       />
+      <AdvanceType status="success">
+          <p>Children component</p>
+          <p>Helloo...</p>
+      </AdvanceType>
     </div>
   );
 }
