@@ -4,6 +4,7 @@ import AdvanceType from "./components/Advance/AdvanceType"
 import EventPropType from "./components/EventPropType/EventPropType"
 import StylePropType from "./components/StylePropType/StylePropType"
 import ExtraPropType from "./components/ExtraPropType/ExtraPropType"
+import StateHook from './components/hooks/stateHook/StateHook';
 function App() {
   const personObject = {
     first: "Adi",
@@ -37,6 +38,9 @@ function App() {
       <EventPropType />
       <StylePropType />
       <ExtraPropType />
+      <h1>Hooks</h1>
+      <StateHook />
+
     </div>
   );
 }
