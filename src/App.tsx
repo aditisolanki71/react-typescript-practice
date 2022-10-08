@@ -3,6 +3,7 @@ import BasicType from './components/BasicType';
 import AdvanceType from "./components/Advance/AdvanceType"
 import EventPropType from "./components/EventPropType/EventPropType"
 import StylePropType from "./components/StylePropType/StylePropType"
+import ExtraPropType from "./components/ExtraPropType/ExtraPropType"
 function App() {
   const personObject = {
     first: "Adi",
@@ -35,6 +36,7 @@ function App() {
       </AdvanceType>
       <EventPropType />
       <StylePropType />
+      <ExtraPropType />
     </div>
   );
 }
