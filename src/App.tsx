@@ -15,6 +15,8 @@ import Profile from './components/auth/Profile';
 import List from './components/Generics/List';
 import RandomNumber from './components/RandomNumber/RandomNumber';
 import Toast from './components/templateliterals/Toast';
+import CustomButton from './components/html/CustomButton';
+import CustomInput from './components/html/CustomInput';
 function App() {
   const personObject = {
     first: "Adi",
@@ -70,9 +72,20 @@ function App() {
         onClick={(item) => console.log(item)}
       />
 
-      <h1>Restrictions = </h1>
+      <h1>*Restrictions = </h1>
       <RandomNumber value={10} isPositive/>
+
+      <h1>*Template literals and exclude = </h1>
       <Toast position="center"/>
+
+      <h1>*Wrapping HTML Elements = </h1>
+      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+        {/* restrict 
+        <div>hello</div>
+         */}
+        Primary Button
+      </CustomButton>
+      <CustomInput />
     </div>
   );
 }
