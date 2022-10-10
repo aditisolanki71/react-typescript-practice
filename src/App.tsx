@@ -13,6 +13,7 @@ import ClassCounter from "./components/class/Counter"
 import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
 import List from './components/Generics/List';
+import RandomNumber from './components/RandomNumber/RandomNumber';
 function App() {
   const personObject = {
     first: "Adi",
@@ -67,6 +68,9 @@ function App() {
         items={[1,2, 3, 4]}
         onClick={(item) => console.log(item)}
       />
+
+      <h1>Restrictions = </h1>
+      <RandomNumber value={10} isPositive/>
     </div>
   );
 }
