@@ -6,6 +6,8 @@ import StylePropType from "./components/StylePropType/StylePropType"
 import ExtraPropType from "./components/ExtraPropType/ExtraPropType"
 import StateHook from './components/hooks/stateHook/StateHook';
 import { Counter } from './components/hooks/reducerHook/Counter';
+import Context from './components/hooks/contextHook/Context';
+import Context2 from "./components/hooks/contextHook/Context2"
 function App() {
   const personObject = {
     first: "Adi",
@@ -42,6 +44,8 @@ function App() {
       <h1>Hooks</h1>
       <StateHook />
       <Counter />
+      <Context />
+      <Context2 />
     </div>
   );
 }
