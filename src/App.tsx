@@ -9,6 +9,7 @@ import { Counter } from './components/hooks/reducerHook/Counter';
 import Context from './components/hooks/contextHook/Context';
 import Context2 from "./components/hooks/contextHook/Context2"
 import RefHook from "./components/hooks/refHook/RefHook"
+import ClassCounter from "./components/class/Counter"
 function App() {
   const personObject = {
     first: "Adi",
@@ -48,6 +49,8 @@ function App() {
       <Context />
       <Context2 />
       <RefHook />
+
+      <ClassCounter message="Hello class component"/>
     </div>
   );
 }
