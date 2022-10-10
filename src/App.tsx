@@ -14,6 +14,7 @@ import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
 import List from './components/Generics/List';
 import RandomNumber from './components/RandomNumber/RandomNumber';
+import Toast from './components/templateliterals/Toast';
 function App() {
   const personObject = {
     first: "Adi",
@@ -71,6 +72,7 @@ function App() {
 
       <h1>Restrictions = </h1>
       <RandomNumber value={10} isPositive/>
+      <Toast position="center"/>
     </div>
   );
 }
