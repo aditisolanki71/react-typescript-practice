@@ -17,6 +17,7 @@ import RandomNumber from './components/RandomNumber/RandomNumber';
 import Toast from './components/templateliterals/Toast';
 import CustomButton from './components/html/CustomButton';
 import CustomInput from './components/html/CustomInput';
+import PolyMorphic from './components/polymorphic/Polymorphic';
 function App() {
   const personObject = {
     first: "Adi",
@@ -86,6 +87,9 @@ function App() {
         Primary Button
       </CustomButton>
       <CustomInput />
+
+      <h1>* Polymorphic = </h1>
+      <PolyMorphic />
     </div>
   );
 }
