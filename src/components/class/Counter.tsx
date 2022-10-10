@@ -5,6 +5,8 @@ type CounterProps = {
 type CounterState = {
    count: number
 }
+// class ClassCounter extends React.Component<{},CounterState> {
+// class ClassCounter extends React.Component<CounterProps> {
 class ClassCounter extends React.Component<CounterProps,CounterState> {
    state = {
       count: 0,

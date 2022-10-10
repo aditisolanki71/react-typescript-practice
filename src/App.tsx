@@ -10,6 +10,8 @@ import Context from './components/hooks/contextHook/Context';
 import Context2 from "./components/hooks/contextHook/Context2"
 import RefHook from "./components/hooks/refHook/RefHook"
 import ClassCounter from "./components/class/Counter"
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 function App() {
   const personObject = {
     first: "Adi",
@@ -49,8 +51,11 @@ function App() {
       <Context />
       <Context2 />
       <RefHook />
-
+      <h1>*class component = </h1>
       <ClassCounter message="Hello class component"/>
+
+      <h1>*Component props = </h1>
+      <Private isLoggedIn={true} component={Profile}/>
     </div>
   );
 }
