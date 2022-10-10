@@ -12,6 +12,7 @@ import RefHook from "./components/hooks/refHook/RefHook"
 import ClassCounter from "./components/class/Counter"
 import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
+import List from './components/Generics/List';
 function App() {
   const personObject = {
     first: "Adi",
@@ -56,6 +57,16 @@ function App() {
 
       <h1>*Component props = </h1>
       <Private isLoggedIn={true} component={Profile}/>
+
+      <h1>*Generics = </h1>
+      <List 
+        items={["Aditi", "Moni", "Arjun", "Bholo"]}
+        onClick={(item) => console.log(item)}
+      />
+       <List 
+        items={[1,2, 3, 4]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
